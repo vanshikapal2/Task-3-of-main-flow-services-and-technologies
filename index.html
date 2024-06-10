@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Living Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Healthy Living Blog</h1>
+        <p>Your Guide to Wellness</p>
+    </header>
+    <nav>
+        <button id="menu-toggle">Menu</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="home" class="content-section">
+            <h2>Welcome to Healthy Living Blog</h2>
+            <p>Discover tips and advice for a healthier lifestyle.</p>
+        </section>
+        <section id="about" class="content-section">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best information and tips for living a healthy life.</p>
+        </section>
+        <section id="blog" class="content-section">
+            <h2>Our Blog</h2>
+            <p>Explore our latest articles on health, wellness, and fitness.</p>
+        </section>
+        <section id="contact" class="content-section">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            <p>You can also reach us at <a href="mailto:contact@healthylivingblog.com">contact@healthylivingblog.com</a></p>
+        </section>
+        <section id="quotes" class="content-section">
+            <h2>Health Quotes</h2>
+            <div id="quote-display">Click the button to see a quote.</div>
+            <button id="next-quote">Next Quote</button>
+        </section>
+        <section id="dynamic-content" class="content-section">
+            <h2>Dynamic Content</h2>
+            <p>Click the button to update the content:</p>
+            <button class="update-btn" onclick="updateContent()">Update Content</button>
+            <div id="display"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Healthy Living Blog. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
